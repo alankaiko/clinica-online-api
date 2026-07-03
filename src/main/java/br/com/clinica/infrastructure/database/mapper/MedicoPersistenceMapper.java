@@ -27,8 +27,8 @@ public class MedicoPersistenceMapper {
         MedicoEntity entity = new MedicoEntity();
         entity.setId(domain.getId());
         entity.setNome(domain.getNome());
-        entity.setCrm(domain.getCrm());
-        entity.setEmail(domain.getEmail());
+        entity.setCrm(domain.getCrm().getValor());
+        entity.setEmail(domain.getEmail().getValor());
         entity.setAtivo(domain.getAtivo());
         entity.setDataCadastro(domain.getDataCadastro());
         entity.setTenantId(domain.getTenantId());

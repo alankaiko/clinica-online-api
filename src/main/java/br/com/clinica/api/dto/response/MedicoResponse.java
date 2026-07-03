@@ -24,8 +24,8 @@ public class MedicoResponse {
         return new MedicoResponse(
             medico.getId(),
             medico.getNome(),
-            medico.getCrm(),
-            medico.getEmail(),
+            medico.getCrm().getValor(),
+            medico.getEmail().getValor(),
             medico.getAtivo(),
             medico.getDataCadastro()
         );

@@ -25,9 +25,9 @@ public class ConvenioResponse {
         return new ConvenioResponse(
             convenio.getId(),
             convenio.getNomeComercial(),
-            convenio.getCnpj(),
+            convenio.getCnpj().getValor(),
             convenio.getRegistroAns(),
-            convenio.getEmail(),
+            convenio.getEmail().getValor(),
             convenio.getAtivo(),
             convenio.getDataCadastro()
         );

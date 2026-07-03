@@ -28,9 +28,9 @@ public class ConvenioPersistenceMapper {
         ConvenioEntity entity = new ConvenioEntity();
         entity.setId(domain.getId());
         entity.setNomeComercial(domain.getNomeComercial());
-        entity.setCnpj(domain.getCnpj());
+        entity.setCnpj(domain.getCnpj().getValor());
         entity.setRegistroAns(domain.getRegistroAns());
-        entity.setEmail(domain.getEmail());
+        entity.setEmail(domain.getEmail().getValor());
         entity.setAtivo(domain.getAtivo());
         entity.setDataCadastro(domain.getDataCadastro());
         entity.setTenantId(domain.getTenantId());
